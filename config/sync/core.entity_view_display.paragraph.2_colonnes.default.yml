@@ -1,0 +1,24 @@
+uuid: 141b644c-802a-4eda-9a21-115b90f42d4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.2_colonnes.field_2_colonnes
+    - paragraphs.paragraphs_type.2_colonnes
+  module:
+    - entity_reference_revisions
+id: paragraph.2_colonnes.default
+targetEntityType: paragraph
+bundle: 2_colonnes
+mode: default
+content:
+  field_2_colonnes:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

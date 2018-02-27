@@ -1,0 +1,9 @@
+uuid: ce97c42e-433f-48f4-8487-4feadcd51141
+langcode: en
+status: true
+dependencies: {  }
+id: 2_colonnes_colonne
+label: '2 colonnes colonne'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
