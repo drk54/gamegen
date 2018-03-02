@@ -1,4 +1,4 @@
-uuid: ccdccd35-dc43-4abd-9c9a-77e096fee25a
+uuid: ff7f46b3-7d8e-4eda-936d-fd7460ec9a47
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - gamegen
 _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
-id: bartik_main_menu
-theme: bartik
-region: primary_menu
-weight: 0
+id: gamegen_main_menu
+theme: gamegen
+region: header
+weight: -3
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -23,4 +23,9 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

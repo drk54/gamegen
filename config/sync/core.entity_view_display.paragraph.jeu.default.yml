@@ -1,0 +1,47 @@
+uuid: a7311b3a-4b5f-409a-adbd-74a5f6fe3973
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jeu.field_game_link
+    - field.field.paragraph.jeu.field_game_name
+    - field.field.paragraph.jeu.field_image
+    - paragraphs.paragraphs_type.jeu
+  module:
+    - image
+    - link
+id: paragraph.jeu.default
+targetEntityType: paragraph
+bundle: jeu
+mode: default
+content:
+  field_game_link:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_game_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

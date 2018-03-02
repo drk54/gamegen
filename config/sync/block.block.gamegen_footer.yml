@@ -1,4 +1,4 @@
-uuid: 5aebf926-8b21-4c91-a063-42d203e5a683
+uuid: 6686ca30-a031-47f5-8ed1-3ea785b955e1
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - gamegen
 _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
-id: bartik_footer
-theme: bartik
-region: footer_fifth
-weight: 0
+id: gamegen_footer
+theme: gamegen
+region: footer
+weight: -4
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

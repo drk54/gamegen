@@ -1,0 +1,47 @@
+uuid: 9fccdad9-82b4-4c65-8599-42b70190ac24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage.field_jeux
+    - node.type.homepage
+  module:
+    - paragraphs
+    - path
+id: node.homepage.default
+targetEntityType: node
+bundle: homepage
+mode: default
+content:
+  field_jeux:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: jeu
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

@@ -1,15 +1,15 @@
-uuid: 05d1af52-cc1a-4551-9aa2-1067dd0c3287
+uuid: 1b92f80c-1b4d-4e3c-8463-a80811d33117
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - gamegen
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+id: gamegen_content
+theme: gamegen
 region: content
 weight: 0
 provider: null

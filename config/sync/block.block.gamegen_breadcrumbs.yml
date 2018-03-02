@@ -1,15 +1,15 @@
-uuid: c220f9b0-62d3-4810-941c-68bb8777506a
+uuid: a83e8d26-9a7e-4e8a-9c9c-0a296008b61b
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - gamegen
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
+id: gamegen_breadcrumbs
+theme: gamegen
 region: breadcrumb
 weight: 0
 provider: null

@@ -1,15 +1,15 @@
-uuid: a68ccc69-34d4-4f5c-a942-cc507cb06c0e
+uuid: 6bb00f50-074d-46c5-a7a2-69fc09ad4036
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - gamegen
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: bartik_local_tasks
-theme: bartik
+id: gamegen_local_tasks
+theme: gamegen
 region: content
-weight: -40
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:
