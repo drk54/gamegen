@@ -2,6 +2,57 @@
 
 .homepage{
 
+  .slide{
+
+    &_1, &_2{
+      background: black;
+      position: fixed;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      z-index: 1000;
+      transition: $transition_very_long;
+    }
+
+    &_throbber{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      width: 50px;
+      height: 50px;
+      background: url("/themes/gamegen/images/icons/ajax-loader.svg");
+      background: {
+        size: cover;
+      };
+      z-index: 1000;
+    }
+
+    &_1{
+      left: 0%;
+    }
+
+    &_2{
+      right: 0%;
+    }
+
+  }
+
+  .slide_wrapper.loaded{
+    .slide{
+      &_1{
+        left: -50%;
+      }
+
+      &_2{
+        right: -50%;
+      }
+      &_throbber{
+        display: none;
+      }
+    }
+  }
+
   &__title{
     display: none;
   }
