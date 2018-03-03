@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.jeu.field_game_link
     - field.field.paragraph.jeu.field_game_name
     - field.field.paragraph.jeu.field_image
+    - image.style.large
     - paragraphs.paragraphs_type.jeu
   module:
     - image
@@ -17,7 +18,7 @@ mode: default
 content:
   field_game_link:
     weight: 3
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -25,11 +26,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    type: link_separate
     region: content
   field_game_name:
     weight: 2
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -37,11 +38,10 @@ content:
     region: content
   field_image:
     weight: 0
-    label: above
+    label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: large
     third_party_settings: {  }
-    type: image
+    type: image_url
     region: content
 hidden: {  }

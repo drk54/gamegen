@@ -15,16 +15,12 @@ mode: default
 content:
   field_jeux:
     type: entity_reference_revisions_entity_view
-    weight: 2
-    label: above
+    weight: 0
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
-  links:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true
