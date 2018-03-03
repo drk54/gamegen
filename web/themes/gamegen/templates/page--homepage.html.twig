@@ -1,0 +1,20 @@
+{% if page.header %}
+    <header role="banner">
+        {{ page.header }}
+    </header>
+{% endif %}
+
+{{ page.primary_menu }}
+
+<main role="main">
+    <video autoplay id="video_background">
+        <source src="/themes/gamegen/background.mov" type="video/mp4">
+    </video>
+    {{ page.content }}
+</main>
+
+{% if page.footer %}
+    <footer class="footer" role="contentinfo">
+        {{ page.footer }}
+    </footer>
+{% endif %}
