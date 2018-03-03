@@ -1,0 +1,9 @@
+uuid: 0024c677-8f0a-4842-8902-edaa87e31995
+langcode: en
+status: true
+dependencies: {  }
+id: jeu
+label: Jeu
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

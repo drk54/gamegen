@@ -1,0 +1,28 @@
+uuid: a589dd79-0790-4301-83d9-330724d798a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepage_de_jeu.body
+    - node.type.homepage_de_jeu
+  module:
+    - text
+    - user
+id: node.homepage_de_jeu.teaser
+targetEntityType: node
+bundle: homepage_de_jeu
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

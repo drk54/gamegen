@@ -1,0 +1,26 @@
+uuid: f1a5deac-f8e7-40c2-b99f-8eb7f0b15411
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_de_jeu.body
+    - node.type.homepage_de_jeu
+  module:
+    - text
+    - user
+id: node.homepage_de_jeu.default
+targetEntityType: node
+bundle: homepage_de_jeu
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

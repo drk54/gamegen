@@ -1,0 +1,20 @@
+uuid: 35843671-84ed-4228-9901-987285297f83
+langcode: en
+status: false
+dependencies:
+  theme:
+    - gamegen
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: gamegen_local_actions
+theme: gamegen
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
