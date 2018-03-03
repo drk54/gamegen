@@ -4,5 +4,7 @@ gamegen-styling:
     theme:
       https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css: { type: external, attributes: { integrity: "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin: "anonymous"} }
       css/main.css: { minified: true }
+  js:
+    js/main.js: {}
   dependencies:
       - core/jquery
