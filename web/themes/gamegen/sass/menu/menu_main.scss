@@ -1,0 +1,25 @@
+.menu_main{
+
+  &__wrapper{
+    display: flex;
+  }
+
+  &__item{
+  }
+
+  &__link{
+    color: white;
+    padding: 0 20px;
+    display: block;
+    line-height: 70px;
+    font-weight: 900;
+    border-bottom: 3px solid transparent;
+    transition: $transition_medium ease-in-out;
+    &:hover{
+      color: $blue;
+      border-bottom: 3px solid $blue;
+      text-decoration: none;
+    }
+  }
+
+}

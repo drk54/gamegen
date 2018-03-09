@@ -5,10 +5,12 @@
  */
 function gamegen_preprocess_html(&$variables) {
 
-    $node = \Drupal::routeMatch()->getParameter('node');
-    $content_type = $node->bundle();
+        $node = \Drupal::routeMatch()->getParameter('node');
+    if($node != NULL){
+        $content_type = $node->bundle();
+        $variables['attributes']['class'][] = $content_type;
+    }
 
-    $variables['attributes']['class'][] = $content_type;
 }
 
 /**
