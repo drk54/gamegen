@@ -9,7 +9,7 @@ _core:
 id: gamegen_local_actions
 theme: gamegen
 region: content
-weight: -3
+weight: -1
 provider: null
 plugin: local_actions_block
 settings:

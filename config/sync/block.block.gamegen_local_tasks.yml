@@ -9,7 +9,7 @@ _core:
 id: gamegen_local_tasks
 theme: gamegen
 region: content
-weight: -3
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:

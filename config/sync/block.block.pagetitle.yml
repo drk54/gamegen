@@ -1,0 +1,18 @@
+uuid: 0afd9089-27a2-4a16-bdd6-dc8a3f374fcc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gamegen
+id: pagetitle
+theme: gamegen
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
