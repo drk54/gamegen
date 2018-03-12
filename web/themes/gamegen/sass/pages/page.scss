@@ -1,0 +1,20 @@
+@import "../common/variables";
+
+.page{
+
+
+  background: {
+    image: url('../images/background.jpg');
+    repeat: no-repeat;
+    position: top center;
+  }
+  min-height: 100%;
+  position: relative;
+
+  &__content{
+    background-color: $grey-dark;
+    margin-top: 150px;
+    padding: 60px 20px 40px;
+  }
+
+}
