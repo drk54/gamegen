@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - node
     - system
   theme:
     - gamegen
@@ -24,8 +25,10 @@ settings:
   level: 1
   depth: 1
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: true
-    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      overview: overview
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
