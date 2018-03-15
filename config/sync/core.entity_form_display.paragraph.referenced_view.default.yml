@@ -1,0 +1,27 @@
+uuid: 0ac726b7-50ea-4d1d-89bb-79cd3d5a7697
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.referenced_view.field_view
+    - paragraphs.paragraphs_type.referenced_view
+  module:
+    - viewsreference
+id: paragraph.referenced_view.default
+targetEntityType: paragraph
+bundle: referenced_view
+mode: default
+content:
+  field_view:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

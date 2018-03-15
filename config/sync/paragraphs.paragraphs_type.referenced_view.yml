@@ -1,9 +1,9 @@
-uuid: 0024c677-8f0a-4842-8902-edaa87e31995
+uuid: 6dc16715-4d25-4845-9ea4-7d5f8c951fce
 langcode: en
 status: true
 dependencies: {  }
-id: jeu
-label: Jeu
+id: referenced_view
+label: 'Referenced view'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }
