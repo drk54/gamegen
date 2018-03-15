@@ -16,7 +16,7 @@
         <ul>
             {% endif %}
             {% for item in items %}
-                <li{{ item.attributes }} class="menu_main__item">
+                <li {{ item.attributes }}>
                     <a class="menu_main__link" href="{{ item.url }}">{{ item.title }}</a>
                     {% if item.below %}
                         {{ menus.menu_links(item.below, attributes, menu_level + 1) }}

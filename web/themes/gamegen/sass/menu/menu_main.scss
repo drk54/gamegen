@@ -6,7 +6,12 @@
     display: flex;
   }
 
-  &__item{
+  .active{
+    .menu_main__link{
+      color: $blue;
+      border-bottom: 3px solid $blue;
+      text-decoration: none;
+    }
   }
 
   &__link{
