@@ -28,6 +28,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
+      article: article
       overview: overview
     negate: false
     context_mapping:
