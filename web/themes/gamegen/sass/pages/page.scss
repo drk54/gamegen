@@ -1,15 +1,20 @@
 @import "../common/variables";
 
-.page{
-
+.background{
 
   background: {
     image: url('../images/background.jpg');
     repeat: no-repeat;
     position: top center;
   }
-  min-height: 100%;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+
+}
+
+.page{
 
   &__content{
     background-color: $grey-dark;

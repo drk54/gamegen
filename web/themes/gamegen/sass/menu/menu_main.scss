@@ -17,6 +17,7 @@
     font-weight: 900;
     border-bottom: 3px solid transparent;
     transition: $transition_medium ease-in-out;
+    text-transform: uppercase;
     &:hover{
       color: $blue;
       border-bottom: 3px solid $blue;
