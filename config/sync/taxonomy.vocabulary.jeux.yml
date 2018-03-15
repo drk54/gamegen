@@ -1,0 +1,9 @@
+uuid: 452eab71-523e-417f-8c4b-415f2306f50b
+langcode: en
+status: true
+dependencies: {  }
+name: Jeux
+vid: jeux
+description: 'Games list'
+hierarchy: 0
+weight: 0
