@@ -1,6 +1,6 @@
-name: Gamegen
+name: Gamegen commons
 type: module
-description: 'Gamegen'
+description: 'Gamegen commons'
 package: Gamegen
 version: VERSION
 core: 8.x

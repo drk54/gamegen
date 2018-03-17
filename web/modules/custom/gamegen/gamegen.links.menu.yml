@@ -1,4 +1,0 @@
-gamegen.gamegen:
-  route_name: gamegen.gamegen
-  parent: system.admin_config
-  title: Gamegen
