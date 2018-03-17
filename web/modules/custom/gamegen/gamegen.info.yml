@@ -1,0 +1,6 @@
+name: Gamegen
+type: module
+description: 'Gamegen'
+package: Gamegen
+version: VERSION
+core: 8.x

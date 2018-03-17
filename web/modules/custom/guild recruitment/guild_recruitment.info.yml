@@ -1,0 +1,6 @@
+name: Guild recruitment
+type: module
+description: 'Guild recruitment status'
+package: Gamegen
+version: VERSION
+core: 8.x

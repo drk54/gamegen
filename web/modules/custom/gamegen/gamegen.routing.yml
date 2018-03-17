@@ -1,0 +1,4 @@
+gamegen.gamegen:
+  path: '/admin/config/gamegen'
+  requirements:
+    _permission: 'access administration pages'
