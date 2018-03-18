@@ -1,0 +1,7 @@
+<?php
+
+    function gamegen_commons_preprocess_page_title(&$variables, $hook){
+        $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+    }
+
+?>

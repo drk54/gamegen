@@ -10,10 +10,7 @@
 
     <main role="main">
         <div class="container page__content">
-            {% if is_front == false %}
-                {{ page.content.pagetitle }}
-            {% endif %}
-            {{ page.content.gamegen_content }}
+            {{ page.content }}
         </div>
     </main>
 
