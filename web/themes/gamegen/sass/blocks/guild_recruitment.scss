@@ -1,0 +1,82 @@
+@import "../common/mixin";
+
+.guild_recruitment{
+
+  &__class div{
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+  }
+
+  &__monk{
+    background-image: url("../images/icons/wow/monk.png");
+  }
+
+  &__dh{
+    background-image: url("../images/icons/wow/dh.png");
+  }
+
+  &__warlock{
+    background-image: url("../images/icons/wow/lock.png");
+  }
+
+  &__rogue{
+    background-image: url("../images/icons/wow/rogue.png");
+  }
+
+  &__druid{
+    background-image: url("../images/icons/wow/druid.png");
+  }
+
+  &__hunter{
+    background-image: url("../images/icons/wow/hunt.png");
+  }
+
+  &__mage{
+    background-image: url("../images/icons/wow/mage.png");
+  }
+
+  &__shaman{
+    background-image: url("../images/icons/wow/sham.png");
+  }
+
+  &__dk{
+    background-image: url("../images/icons/wow/dk.png");
+  }
+
+  &__paladin{
+    background-image: url("../images/icons/wow/paladin.png");
+  }
+
+  &__priest{
+    background-image: url("../images/icons/wow/priest.png");
+  }
+
+  &__war{
+    background-image: url("../images/icons/wow/war.png");
+  }
+
+  &__head{
+    &__tank{
+      width: 60px;
+      height: 60px;
+      background-position: -6px -70px;
+      background-image: url("../images/icons/wow/roles.png");
+
+    }
+    &__heal{
+      width: 60px;
+      height: 60px;
+      background-position: -72px -2px;
+      background-image: url("../images/icons/wow/roles.png");
+    }
+    &__dps{
+      width: 60px;
+      height: 60px;
+      background-position: -70px -70px;
+      background-image: url("../images/icons/wow/roles.png");
+    }
+  }
+
+
+}

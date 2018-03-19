@@ -19,8 +19,8 @@ class GuildRecruitmentBlock extends BlockBase {
 
         $config = \Drupal::config('guild_recruitment.settings');
 
-        $classes = ['war', 'warlock', 'shaman', 'rogue', 'priest', 'paladin', 'monk', 'mage', 'hunter', 'druid', 'dk'];
-        $roles = ['tank', 'heal', 'cac', 'cast'];
+        $classes = ['war', 'warlock', 'shaman', 'rogue', 'priest', 'paladin', 'monk', 'mage', 'hunter', 'druid', 'dk', 'dh'];
+        $roles = ['tank', 'heal', 'dps'];
 
         $content = [];
 

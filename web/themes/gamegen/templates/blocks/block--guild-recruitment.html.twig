@@ -1,12 +1,24 @@
 <div class="guild_recruitment">
     <h3>{{ 'Recrutement'|t }}</h3>
     <table class="guild_recruitment__table">
-        <tbody>
+        <thead class="guild_recruitment__head">
+            <tr class="guild_recruitment__row">
+                <td></td>
+                <td class="guild_recruitment__head__tank"></td>
+                <td class="guild_recruitment__head__heal"></td>
+                <td class="guild_recruitment__head__dps"></td>
+            </tr>
+        </thead>
+        <tbody class="guild_recruitment__body">
             {% for class in content['#content'] %}
                 <tr class="guild_recruitment__row">
-                    <td class="guild_recruitment__{{ class['class'] }}">{{ class['class'] }}</td>
+                    <td class="guild_recruitment__class">
+                        <div class="guild_recruitment__{{ class['class'] }}"></div>
+                    </td>
                     {% for role in class['role'] %}
-                        <td class="guild_recruitment__{{ role.0 }}">{{ role.1 }}</td>
+                        <td>
+                            <div class="guild_recruitment__body__{{ role.0 }}" data-open="{{ role.1 }}"></div>
+                        </td>
                     {% endfor %}
                 </tr>
             {% endfor %}
