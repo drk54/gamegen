@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - guild_recruitment
+    - node
+    - system
   theme:
     - gamegen
 id: guildrecruitment
@@ -17,4 +19,16 @@ settings:
   label: 'Guild Recruitment'
   provider: guild_recruitment
   label_display: visible
-visibility: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      overview: overview
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /wow
+    negate: false
+    context_mapping: {  }
