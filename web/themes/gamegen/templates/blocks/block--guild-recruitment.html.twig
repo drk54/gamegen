@@ -1,0 +1,15 @@
+<div class="guild_recruitment">
+    <h3>{{ 'Recrutement'|t }}</h3>
+    <table class="guild_recruitment__table">
+        <tbody>
+            {% for class in content['#content'] %}
+                <tr class="guild_recruitment__row">
+                    <td class="guild_recruitment__{{ class['class'] }}">{{ class['class'] }}</td>
+                    {% for role in class['role'] %}
+                        <td class="guild_recruitment__{{ role.0 }}">{{ role.1 }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
