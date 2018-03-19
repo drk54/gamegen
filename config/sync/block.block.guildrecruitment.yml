@@ -1,0 +1,20 @@
+uuid: 278e75ff-0db1-419b-95a6-330b7e84b7ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - guild_recruitment
+  theme:
+    - gamegen
+id: guildrecruitment
+theme: gamegen
+region: content
+weight: -2
+provider: null
+plugin: guild_recruitment_block
+settings:
+  id: guild_recruitment_block
+  label: 'Guild Recruitment'
+  provider: guild_recruitment
+  label_display: visible
+visibility: {  }
