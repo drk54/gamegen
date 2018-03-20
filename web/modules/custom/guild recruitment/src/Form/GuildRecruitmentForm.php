@@ -23,8 +23,8 @@ class GuildRecruitmentForm extends ConfigFormBase {
 
         $config = $this->config('guild_recruitment.settings');
 
-        $thead = ['class', 'tank', 'heal', 'cac', 'cast'];
-        $classes = ['war', 'warlock', 'shaman', 'rogue', 'priest', 'paladin', 'monk', 'mage', 'hunter', 'druid', 'dk'];
+        $thead = ['class', 'tank', 'heal', 'dps'];
+        $classes = ['war', 'warlock', 'shaman', 'rogue', 'priest', 'paladin', 'monk', 'mage', 'hunter', 'druid', 'dk', 'dh'];
         $roles = ['tank', 'heal', 'dps'];
 
         $form['wrapper'] = array(
@@ -73,7 +73,7 @@ class GuildRecruitmentForm extends ConfigFormBase {
     public function submitForm(array &$form, FormStateInterface $form_state) {
         parent::submitForm($form, $form_state);
 
-        $classes = ['war', 'warlock', 'shaman', 'rogue', 'priest', 'paladin', 'monk', 'mage', 'hunter', 'druid', 'dk'];
+        $classes = ['war', 'warlock', 'shaman', 'rogue', 'priest', 'paladin', 'monk', 'mage', 'hunter', 'druid', 'dk', 'dh'];
         $roles = ['tank', 'heal', 'dps'];
 
         foreach( $classes as $class ){

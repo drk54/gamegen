@@ -78,5 +78,18 @@
     }
   }
 
+  & div[data-open='0']{
+    width: 60px;
+    height: 60px;
+    background-position: -70px -136px;
+    background-image: url("../images/icons/wow/roles.png");
+  }
 
+  & div[data-open='1']{
+    width: 60px;
+    height: 60px;
+    background-position: -140px -0px;
+    background-image: url("../images/icons/wow/roles.png");
+  }
+  
 }
