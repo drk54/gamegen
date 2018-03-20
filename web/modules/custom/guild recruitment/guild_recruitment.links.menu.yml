@@ -1,0 +1,5 @@
+guild_recruitment.settings:
+  title: 'Guild Recruitment configuration'
+  route_name: guild_recruitment.settings
+  description: 'Guild Recruitment status'
+  parent: gamegen_commons.gamegen_link

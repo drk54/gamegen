@@ -1,0 +1,4 @@
+gamegen_commons.gamegen_link:
+  route_name: gamegen_commons.gamegen_route
+  parent: system.admin_config
+  title: Gamegen
