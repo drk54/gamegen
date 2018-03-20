@@ -2,9 +2,13 @@
 
 .guild_recruitment{
 
+  &__table{
+    margin: auto;
+  }
+
   &__class div{
-    width: 32px;
-    height: 32px;
+    width: 60px;
+    height: 60px;
     background-size: cover;
   }
 
@@ -56,26 +60,24 @@
     background-image: url("../images/icons/wow/war.png");
   }
 
-  &__head{
-    &__tank{
-      width: 60px;
-      height: 60px;
-      background-position: -6px -70px;
-      background-image: url("../images/icons/wow/roles.png");
+  &__tank{
+    width: 60px;
+    height: 60px;
+    background-position: -6px -70px;
+    background-image: url("../images/icons/wow/roles.png");
 
-    }
-    &__heal{
-      width: 60px;
-      height: 60px;
-      background-position: -72px -2px;
-      background-image: url("../images/icons/wow/roles.png");
-    }
-    &__dps{
-      width: 60px;
-      height: 60px;
-      background-position: -70px -70px;
-      background-image: url("../images/icons/wow/roles.png");
-    }
+  }
+  &__heal{
+    width: 60px;
+    height: 60px;
+    background-position: -72px -2px;
+    background-image: url("../images/icons/wow/roles.png");
+  }
+  &__dps{
+    width: 60px;
+    height: 60px;
+    background-position: -70px -70px;
+    background-image: url("../images/icons/wow/roles.png");
   }
 
   & div[data-open='0']{

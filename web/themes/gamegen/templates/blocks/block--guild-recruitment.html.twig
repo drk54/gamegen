@@ -1,23 +1,33 @@
 <div class="guild_recruitment">
+    {{ content }}
     <h3>{{ 'Recrutement'|t }}</h3>
     <table class="guild_recruitment__table">
         <thead class="guild_recruitment__head">
             <tr class="guild_recruitment__row">
                 <td></td>
-                <td class="guild_recruitment__head__tank"></td>
-                <td class="guild_recruitment__head__heal"></td>
-                <td class="guild_recruitment__head__dps"></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__war"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__warlock"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__shaman"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__rogue"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__priest"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__paladin"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__monk"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__mage"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__hunter"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__druid"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__dk"></div></td>
+                <td class="guild_recruitment__class"><div class="guild_recruitment__dh"></div></td>
             </tr>
         </thead>
         <tbody class="guild_recruitment__body">
-            {% for class in content['#content'] %}
+            {% for role in content['#content'] %}
                 <tr class="guild_recruitment__row">
-                    <td class="guild_recruitment__class">
-                        <div class="guild_recruitment__{{ class['class'] }}"></div>
+                    <td class="guild_recruitment__role">
+                        <div class="guild_recruitment__{{ role['role'] }}"></div>
                     </td>
-                    {% for role in class['role'] %}
+                    {% for class in role['class'] %}
                         <td>
-                            <div class="guild_recruitment__body__{{ role.0 }}" data-open="{{ role.1 }}"></div>
+                            <div class="guild_recruitment__body__{{ class.0 }}" data-open="{{ class.1 }}"></div>
                         </td>
                     {% endfor %}
                 </tr>

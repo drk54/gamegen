@@ -24,13 +24,14 @@ class GuildRecruitmentBlock extends BlockBase {
 
         $content = [];
 
-        foreach ($classes as $class){
-            $content[$class]['class'] = $class;
-            foreach ($roles as $role){
-                $content[$class]['role'][$role][] = $role;
-                $content[$class]['role'][$role][] = $config->get($class.'_'.$role);
+        foreach ($roles as $role){
+            $content[$role]['role'] = $role;
+            foreach ($classes as $class){
+                $content[$role]['class'][$class][] = $class;
+                $content[$role]['class'][$class][] = $config->get($class.'_'.$role);
             }
         }
+
         return array(
             '#content' => $content,
         );
