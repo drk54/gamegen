@@ -1,4 +1,4 @@
-war_tank: 0
+war_tank: 1
 war_heal: 0
 war_cac: 0
 war_cast: 0
@@ -42,3 +42,17 @@ dk_tank: 0
 dk_heal: 0
 dk_cac: 0
 dk_cast: 0
+war_dps: 0
+warlock_dps: 0
+shaman_dps: 0
+rogue_dps: 0
+priest_dps: 0
+paladin_dps: 0
+monk_dps: 0
+mage_dps: 0
+hunter_dps: 0
+druid_dps: 0
+dk_dps: 0
+dh_tank: 0
+dh_heal: 0
+dh_dps: 0
