@@ -1,9 +1,0 @@
-uuid: 7d499fa4-9d6b-45a6-a362-d48cd923ce41
-langcode: en
-status: true
-dependencies: {  }
-id: 2_colonnes
-label: '2 colonnes'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

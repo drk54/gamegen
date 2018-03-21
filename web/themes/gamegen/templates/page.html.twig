@@ -1,0 +1,22 @@
+<div class="background"></div>
+<div class="page">
+    {% if page.header %}
+        <header role="banner">
+            {{ page.header }}
+        </header>
+    {% endif %}
+
+    {{ page.primary_menu }}
+
+    <main role="main">
+        <div class="container page__content">
+            {{ page.content }}
+        </div>
+    </main>
+
+    {% if page.footer %}
+        <footer class="footer" role="contentinfo">
+            {{ page.footer }}
+        </footer>
+    {% endif %}
+</div>

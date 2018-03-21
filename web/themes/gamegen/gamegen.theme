@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Implements theme_preprocess_HOOK().
+ */
+function gamegen_preprocess_html(&$variables) {
+
+        $node = \Drupal::routeMatch()->getParameter('node');
+    if($node != NULL){
+        $content_type = $node->bundle();
+        $variables['attributes']['class'][] = $content_type;
+    }
+
+}
+
+/**
+ * Implements gamegen_suggestions_HOOK_alter().
+ */
+function gamegen_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        $content_type = $node->bundle();
+        $suggestions[] = 'page__'.$content_type;
+    }
+}
+
+function gamegen_preprocess_menu(&$variables, $hook) {
+    if ($hook == 'menu__main') {
+        $current_path = \Drupal::request()->getRequestUri();
+        $items = $variables['items'];
+
+        foreach ($items as $key => $item) {
+            // Set active to dom element if path of menu item matches current path
+            if ($item['url']->toString() == $current_path) {
+                // Add active link.
+                $variables['items'][$key]['attributes']->addClass('active');
+            } else {
+                // Set active to dom element if path of menu item matches first part of current path
+                $url_fragments = explode('/', $current_path);
+                if (count($url_fragments) > 1 AND '/' . $url_fragments[1] == $item['url']->toString()) {
+                    $variables['items'][$key]['attributes']->addClass('active');
+                }
+            }
+        }
+    }
+}

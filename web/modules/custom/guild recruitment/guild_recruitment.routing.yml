@@ -1,0 +1,9 @@
+guild_recruitment.settings:
+  path: '/admin/config/gamegen/guild_recruitment/settings'
+  defaults:  
+    _form: '\Drupal\guild_recruitment\Form\GuildRecruitmentForm'
+    _title: 'GuildRecruitmentForm'
+  requirements:  
+    _permission: 'access administration pages'  
+  options:  
+    _admin_route: TRUE 

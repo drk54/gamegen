@@ -1,0 +1,31 @@
+uuid: 88ad75d1-dcf7-4614-bb87-270830f6bbc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_content
+    - node.type.overview
+    - paragraphs.paragraphs_type.referenced_view
+  module:
+    - entity_reference_revisions
+id: node.overview.field_paragraph_content
+field_name: field_paragraph_content
+entity_type: node
+bundle: overview
+label: 'Paragraph - Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      referenced_view: referenced_view
+    target_bundles_drag_drop:
+      referenced_view:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions
